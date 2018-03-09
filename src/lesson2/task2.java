@@ -8,16 +8,16 @@ public class task2 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Введите стороны треугольника:");
+		System.out.println("РІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂС‹ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°:");
 		double a = Double.parseDouble(reader.readLine());
 		double b = Double.parseDouble(reader.readLine());
 		double c = Double.parseDouble(reader.readLine());
 		double p = (a + b + c) / 2;
 		if ((p - a <= 0) || ((p - b <= 0) || (p - c <= 0))) {
-			System.out.println("Такого треугольника нет");
+			System.out.println("С‚Р°РєРѕРіРѕ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° РЅРµС‚");
 		} else {
 			double s = Math.sqrt(p * ((p - a) * (p - b) * (p - c)));
-			System.out.println("Площадь треугольника: " + s);
+			System.out.println("РїР»РѕС‰Р°РґСЊ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°: " + s);
 		}
 
 	}

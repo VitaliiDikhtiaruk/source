@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class task5 {
 	public static void main(String[] args) throws NumberFormatException, IOException, ArrayIndexOutOfBoundsException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Введите размеры матрицы");
+		System.out.println("РІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂС‹ РјР°С‚СЂРёС†С‹");
 		int a = Integer.parseInt(reader.readLine());
 		int b = Integer.parseInt(reader.readLine());
 		int[][] arr = new int[a][b];
@@ -24,7 +24,7 @@ public class task5 {
 			System.out.println();
 		}
 
-		System.out.println("Поворот на 90");
+		System.out.println("РїРѕРІРѕСЂРѕС‚ РЅР° 90");
 
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr[i].length; j++) {
@@ -37,7 +37,7 @@ public class task5 {
 			}
 			System.out.println();
 		}
-		System.out.println("Поворот на 180");
+		System.out.println("РїРѕРІРѕСЂРѕС‚ РЅР° 180");
 		for (int i = 0; i < a; i++) {
 			for (int j = 0; j < b; j++) {
 				temp2[i][j] = arr[a - i - 1][b - j - 1];
@@ -49,7 +49,7 @@ public class task5 {
 			}
 			System.out.println();
 		}
-		System.out.println("Поворот на 270");
+		System.out.println("РѕС‚ РЅР°РїРѕРІРѕСЂ270");
 		for (int i = 0; i < arr.length; i++) {
 			for (int j = 0; j < arr.length; j++) {
 				arr[i][arr.length - 1 - j] = temp2[j][i];

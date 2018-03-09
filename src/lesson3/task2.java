@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class task2 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Укажите кол. строк, кол. элементов в рисунке, кол. повторений рисунка");
+		System.out.println("РІРІРµРґРёС‚Рµ РїР°СЂР°РјРµС‚СЂС‹ РѕР±РѕРµРІ");
 		int c = Integer.parseInt(reader.readLine());
 		int b = Integer.parseInt(reader.readLine());
 		int a = Integer.parseInt(reader.readLine());
@@ -17,7 +17,7 @@ public class task2 {
 		String s2 = "=";
 		String s22 = new String();
 		if ((a <= 0) || (b <= 0) || (c <= 0)) {
-			System.out.println("Введено отрицательное или 0 значение");
+			System.out.println("Р·РЅР°С‡РµРЅРёРµ 0 РёР»Рё РјРµРЅСЊС€Рµ");
 		} else {
 			for (int i = 0; i < b; i++) {
 				s11 += s1;

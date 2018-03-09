@@ -8,12 +8,12 @@ public class task3 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Введите радиус:");
+		System.out.println("РІРІРµРґРёС‚Рµ СЂР°РґРёСѓСЃ:");
 		double a = Double.parseDouble(reader.readLine());
 		if(a <= 0) {
-			System.out.println("Радиус введен неверно");
+			System.out.println("Р·РЅР°С‡РµРЅРёРµ РјРµРЅСЊС€Рµ 0");
 		} else {
-			System.out.println("Длина окружности: " + (2*Math.PI*a));
+			System.out.println("РґР»РёРЅР° РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " + (2*Math.PI*a));
 		}
 		
 	}

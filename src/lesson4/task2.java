@@ -17,14 +17,14 @@ public class task2 {
 
 	}
 	
-	//сортируем и выводим максимальное значение
+	//РёС‰РµРј РјР°РєСЃРёРјСѓРј
 	
 	public static int maxArray(int[] arr) {			
 		Arrays.sort(arr);
 		return arr[arr.length - 1];
 	}
 	
-	//рисуем фигуру из +
+	//СЂРёСЃСѓРµРј С„РёРіСѓСЂСѓ РёР· +
 
 	public static char[][] square(char[][] arr, int a, int b) {			
 
@@ -39,8 +39,7 @@ public class task2 {
 
 	}
 	
-	//ищем кол. слов с помощью рег. выражений
-
+	//СЃС‡РµС‚С‡РёРє СЃР»РѕРІ СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРі. РІС‹СЂР°Р¶РµРЅРёР№
 	public static int wordCounter(String s) {
 		int c = 0;
 		Matcher matcher = Pattern.compile("(\\s+)?\\S+(\\s*)?").matcher(s);

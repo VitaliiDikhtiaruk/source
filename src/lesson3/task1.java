@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class task1 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-		System.out.println("Введите высоту фигуры");
+		System.out.println("РІРІРµРґРёС‚Рµ РІС‹СЃРѕС‚Сѓ С„РёРіСѓСЂС‹");
 		int a = Integer.parseInt(reader.readLine());
 		String[] arr = new String[a];
 		String s = ".";

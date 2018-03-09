@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class task1 {
 	public static void main(String[] args) throws IOException, IndexOutOfBoundsException {
 		
-		System.out.println("Введите число");
+		System.out.println("РІРІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ");
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		String s = reader.readLine();
 		int i = 0;
