@@ -16,13 +16,17 @@ public class task2 {
 		System.out.println(wordCounter(s));
 
 	}
-
-	public static int maxArray(int[] arr) {
+	
+	//сортируем и выводим максимальное значение
+	
+	public static int maxArray(int[] arr) {			
 		Arrays.sort(arr);
 		return arr[arr.length - 1];
 	}
+	
+	//рисуем фигуру из +
 
-	public static char[][] square(char[][] arr, int a, int b) {
+	public static char[][] square(char[][] arr, int a, int b) {			
 
 		for (int i = 0; i < a; i++) {
 			for (int j = 0; j < b; j++) {
@@ -34,6 +38,8 @@ public class task2 {
 		return arr;
 
 	}
+	
+	//ищем кол. слов с помощью рег. выражений
 
 	public static int wordCounter(String s) {
 		int c = 0;
