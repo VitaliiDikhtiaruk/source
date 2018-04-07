@@ -1,8 +1,9 @@
 package lesson9;
 
-import java.util.Iterator;
 
-public interface MyList {
+import java.util.ListIterator;
+
+public interface MyList  extends Iterable<Object> {
 	void add(Object e); // appends the specified element to the end of this list
 	void clear(); // removes all of the elements from this list
 	boolean remove(Object o); // removes the first occurrence of the specified element from this list
@@ -10,6 +11,7 @@ public interface MyList {
 	int size(); // returns the number of elements in this list
 	boolean contains(Object o); // returns true if this list contains the specified element.
 	boolean containsAll(MyList c); // returns true if this list contains all of the elements of the specified list
+	
 	
 
 
