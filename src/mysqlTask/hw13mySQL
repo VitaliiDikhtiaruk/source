@@ -1,0 +1,10 @@
+#SELECT * FROM author;
+#SELECT * FROM books;
+-- авторы которые написали две и более книги
+SELECT author_name, author_last_name, COUNT(*) AS amount_of_books FROM author GROUP BY author_last_name HAVING COUNT(*)>1;
+-- книги, написанные двумя и более авторами
+SELECT author_book_titles, COUNT(*) AS amount_of_authors FROM author GROUP BY author_book_titles HAVING COUNT(*)>1;
+-- авторы рожденные в промежутке между 50 и 70 годами
+SELECT author_book_titles, author_dob FROM author WHERE author_dob >= '1949-12-31' and author_dob <= '1971-01-01';
+-- количество книг, написанных авторами, рожденных в промежутке между 50 и 70 годами
+SELECT COUNT(*) AS amount_of_books_by_author_dob1950_1970 FROM author WHERE author_dob >= '1949-12-31' and author_dob <= '1971-01-01';
